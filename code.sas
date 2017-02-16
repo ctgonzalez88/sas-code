@@ -2,13 +2,13 @@
 
 
 
-TITLE "MOBILITY STANCE TIME, TURN ANGLE, & MEAN TURN VELOCITY";
-/****---------------------------------------------------------------****/
-/****-----MOBILITY STANCE TIME, TURN ANGLE, & MEAN TURN VELOCITY----****/
-/****---------------------------------------------------------------****/
+TITLE "FREE LIVING FEATURE - MOBILITY STANCE";
+/****---------------------------------------------****/
+/****-----MOBILITY STANCE DESCRIPTIVE ANALYSIS----****/
+/****---------------------------------------------****/
 data DEVICE_DAILY;
 	set DEVICE_DAILY;
-	WHERE dayofstudy GE 1;
+	WHERE dayofstudy GE 1; *THIS EX;
 run;
 PROC SORT DATA=DEVICE_DAILY;
 	BY gls_subject_code dayofstudy;
